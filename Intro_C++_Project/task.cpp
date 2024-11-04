@@ -76,8 +76,6 @@ class application
         cout << users[id].age;
         print_message("\n\n");
     }
-
-
     
     // verify if id is greater than number of users added 
     bool is_valid_id(const int &id)
