@@ -33,7 +33,6 @@ class user_info
 
 // Functions prototypes
 void print_message(string msg);
-void print_message(string msg);
 void print_message();
 record_options read_user_input(void);
 
