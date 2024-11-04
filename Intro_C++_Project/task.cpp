@@ -33,6 +33,7 @@ class user_info
 
 // Functions prototypes
 void print_message(string msg);
+void print_message(int msg);
 void print_message();
 record_options read_user_input(void);
 
@@ -56,11 +57,11 @@ class application
             users[user_index].username = name;
             users[user_index].age = age;
             user_index++;
-            cout << "User record has been added successfully. \n \n";
+           print_message("User record has been added successfully. \n \n");
         }
         else
         {
-            cout << "Error - User record has reached its limit. \n \n";
+            print_message("Error - User record has reached its limit. \n \n");
         }
 
     }
@@ -69,10 +70,10 @@ class application
     void get_user_record(const int &id)
     {
         print_message("User Name: ");
-        cout << users[id].username;
+        print_message(users[id].username);
         print_message("\n");
         print_message("User Age: ");
-        cout << users[id].age;
+        print_message(users[id].age);
         print_message("\n\n");
     }
     
@@ -194,6 +195,18 @@ void print_message(string msg)
     cout <<msg;
 }
 
+// Override print message to print the options
+/**
+ * @brief Prints a message to the standard output.
+ * 
+ * This function outputs the provided string message to the console.
+ * 
+ * @param msg The message to be printed.
+ */
+void print_message(int msg)
+{
+    cout <<msg;
+}
 
 // Override print message to print the options
 /**
