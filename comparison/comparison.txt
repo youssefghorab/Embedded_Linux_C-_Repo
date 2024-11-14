@@ -1,0 +1,26 @@
+﻿Command used : strace -c “Command” 
+
+Time taken by command “LS” = 0.002041 seconds
+Time taken by command “find” = 1.348122 seconds
+
+ls is better in execution time 
+
+Time taken by command “cp” = 0.002641 seconds
+Time taken by command “rsync” = 0.005137 seconds
+
+cp is better in execution time 
+
+Time taken by command “diff” =  0.001702 seconds
+Time taken by command “cmp” =  0.001653 seconds
+
+cmp is better in execution time 
+
+Time taken by command “sort” =   0.001153 seconds
+Time taken by command “uniq” =  0.000744 seconds
+
+uniq is better in execution time 
+
+Time taken by command “grep” =  0.002249 seconds
+Time taken by command “sed” =  0.002972 seconds
+
+grep is better in execution time 
